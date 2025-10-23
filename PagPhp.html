@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Guía PHP</title>
+  <link rel="icon" href="Escudo.png" type="image">
+  <style>
+    body {
+      background-color: #FFF9ED;
+      margin: 0;
+      font-family: Times new roman;
+    }
+
+    header {
+      font-size: 30px;
+      text-align: center;
+      padding: 50px;
+	  width:73%;
+      background-color: #1C6919;
+      color: white;
+    }
+
+    .subtitle {
+      text-align: left;
+      margin-top: 30px;
+      font-size: 24px;
+    }
+
+    .content {
+      margin-left: 50px;
+      margin-right: 320px; /* Espacio para el sidebar */
+      margin-top: 30px;
+      text-align: left;
+      padding: 20px;
+      box-sizing: border-box;
+	  font-size:20px;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 100%;
+      background-color: #023300;
+      padding-top: 60px;
+      box-sizing: border-box;
+      overflow-y: auto;
+	  font-size:20px;
+	  color:white
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #021F00;
+    }
+
+    footer {
+      background-color: #1C6919;
+      color: white;
+      text-align: center;
+      width: 77.6%;
+      padding: 10px;
+      margin-top: 50px;
+    }
+	  .button1 {
+        background-color: #1C6919;
+        }
+	.my-button {
+      background-color: #4AAD4A;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 190px;
+}
+.my-button2 {
+      background-color: #F3E59E;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 50px;
+}
+.my-button3 {
+      background-color: #F58D78;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 50px;
+}
+  pre {
+      background-color: #f4f4f4;
+      border-left: 4px solid #1C6919;
+      padding: 10px;
+      text-align: left;
+      white-space: pre-wrap;
+	  font-size:16px
+    }
+	shape {
+      font-size: 23px;
+      text-align: center;
+      padding: 25px;
+      background-color: #1C6919;
+      color: white;
+	}
+	
+  </style>
+</head>
+
+<body>
+  <header>
+ Guia Para PHP
+  </header>
+
+  <div class="content">
+    <h2 class="subtitle">Introducción a PHP</h2>
+    <p>PHP (acrónimo recursivo de "PHP: Hypertext Preprocessor") es un lenguaje de programación del lado del servidor, especialmente diseñado para el desarrollo web. Fue creado en 1994 por Rasmus Lerdorf y se ha convertido en uno de los lenguajes más utilizados para crear sitios dinámicos e interactivos.</p>
+
+    <h2 class="subtitle">¿Por qué aprender PHP?</h2>
+    <p>PHP es ampliamente usado en el desarrollo web debido a su facilidad de aprendizaje, amplia documentación y comunidad activa. Muchas plataformas populares como WordPress, Joomla y Drupal están desarrolladas con PHP. Además, es compatible con la mayoría de servidores y sistemas operativos.</p>
+
+    <h2 class="subtitle">Requisitos para comenzar</h2>
+    <p>Antes de comenzar a programar en PHP, es recomendable contar con un servidor local que interprete el código PHP. Puedes instalar herramientas como XAMPP, WAMP o MAMP, que te permiten ejecutar tu código en tu propio computador sin necesidad de tener un servidor en línea. Para ver un tutorial presione la primera imagen que se encuentra al lado derecho.
+    
+     <h2 class="subtitle">Estructuras de control</h2>
+    <p>PHP permite usar estructuras condicionales como <code>if</code>, <code>else</code>, y bucles como <code>for</code>, <code>while</code> y <code>foreach</code>. Estas estructuras permiten controlar el flujo del programa. Si Aún no le queda muy claro este tema, y quiere profundizar un poco más en estas estructuras, de click en la segunda imagen del lado derecho.</p>
+
+    <h2 class="subtitle">Conclusión</h2>
+    <p>PHP es una excelente opción para quienes desean empezar a desarrollar sitios web dinámicos. Con práctica y dedicación, podrás crear aplicaciones web funcionales e incluso interactuar con bases de datos como MySQL. Esta guía es solo el comienzo, ¡te invitamos a seguir explorando!</p>
+    
+      
+    <center> <p><shape>Estructuras De Control</shape></p></center>
+
+    <h2 class="subtitle">Primer script en PHP</h2>
+    <p>Todo archivo PHP debe tener la extensión <code>.php</code> y su contenido debe estar dentro de etiquetas especiales. Aquí tienes un ejemplo básico:</p>
+    <pre>
+&lt;?php
+  echo "¡Hola, mundo!";
+?&gt;
+    </pre>
+    <p>Este código imprimirá el mensaje "¡Hola, mundo!" en tu navegador. La función <code>echo</code> se usa para mostrar información en pantalla.</p>
+
+    <h2 class="subtitle">Variables en PHP</h2>
+    <p>En PHP, las variables comienzan con el signo <code>$</code> seguido del nombre de la variable. No es necesario declarar el tipo de dato, ya que PHP lo interpreta automáticamente. Ejemplo:</p>
+    <pre>
+&lt;?php
+  $nombre = "Juan";
+  $edad = 20;
+  echo "Mi nombre es $nombre y tengo $edad años.";
+?&gt;
+    </pre>
+
+   
+  </div>
+   <div class="content">
+    <h2 class="subtitle">Estructura IF</h2>
+    <pre>
+&lt;?php
+$edad = 18;
+if ($edad >= 18) {
+  echo "Eres mayor de edad.";
+}
+?&gt;
+
+&lt;?php
+$numero = 5;
+if ($numero &gt; 0) {
+  echo "El número es positivo.";
+}
+?&gt;
+    </pre>
+
+    <h2 class="subtitle">Estructura IF...ELSE</h2>
+    <pre>
+&lt;?php
+$hora = 14;
+if ($hora &lt; 12) {
+  echo "Buenos días";
+} else {
+  echo "Buenas tardes";
+}
+?&gt;
+
+&lt;?php
+$valor = 10;
+if ($valor % 2 == 0) {
+  echo "Es par";
+} else {
+  echo "Es impar";
+}
+?&gt;
+    </pre>
+
+    <h2 class="subtitle">Estructura IF...ELSEIF...ELSE</h2>
+    <pre>
+&lt;?php
+$nota = 85;
+if ($nota &gt;= 90) {
+  echo "Excelente";
+} elseif ($nota &gt;= 70) {
+  echo "Aprobado";
+} else {
+  echo "Reprobado";
+}
+?&gt;
+
+&lt;?php
+$dia = "martes";
+if ($dia == "lunes") {
+  echo "Inicio de semana";
+} elseif ($dia == "viernes") {
+  echo "Fin de semana cerca";
+} else {
+  echo "Día normal";
+}
+?&gt;
+    </pre>
+
+    <h2 class="subtitle">Estructura SWITCH</h2>
+    <pre>
+&lt;?php
+$opcion = 2;
+switch ($opcion) {
+  case 1:
+    echo "Seleccionaste uno";
+    break;
+  case 2:
+    echo "Seleccionaste dos";
+    break;
+  default:
+    echo "Opción no válida";
+}
+?&gt;
+
+&lt;?php
+$color = "azul";
+switch ($color) {
+  case "rojo":
+    echo "Color pasión";
+    break;
+  case "azul":
+    echo "Color calma";
+    break;
+  default:
+    echo "Color desconocido";
+}
+?&gt;
+    </pre>
+
+    <h2 class="subtitle">Estructura WHILE</h2>
+    <pre>
+&lt;?php
+$i = 1;
+while ($i &lt;= 5) {
+  echo "Número: $i &lt;br&gt;";
+  $i++;
+}
+?&gt;
+
+&lt;?php
+$contador = 0;
+while ($contador &lt; 3) {
+  echo "Iteración $contador &lt;br&gt;";
+  $contador++;
+}
+?&gt;
+    </pre>
+
+    <h2 class="subtitle">Estructura DO...WHILE</h2>
+    <pre>
+&lt;?php
+$j = 1;
+do {
+  echo "Valor: $j &lt;br&gt;";
+  $j++;
+} while ($j &lt;= 3);
+?&gt;
+
+&lt;?php
+$numero = 6;
+do {
+  echo "Número es $numero &lt;br&gt;";
+  $numero--;
+} while ($numero &gt; 3);
+?&gt;
+    </pre>
+
+    <h2 class="subtitle">Estructura FOR</h2>
+    <pre>
+&lt;?php
+for ($i = 1; $i &lt;= 5; $i++) {
+  echo "Iteración: $i &lt;br&gt;";
+}
+?&gt;
+
+&lt;?php
+for ($x = 0; $x &lt; 10; $x += 2) {
+  echo "Número par: $x &lt;br&gt;";
+}
+?&gt;
+    </pre>
+
+    <h2 class="subtitle">Estructura FOREACH</h2>
+    <pre>
+&lt;?php
+$nombres = ["Ana", "Luis", "Carlos"];
+foreach ($nombres as $nombre) {
+  echo "Hola $nombre &lt;br&gt;";
+}
+?&gt;
+
+&lt;?php
+$edades = ["Ana" =&gt; 20, "Luis" =&gt; 22];
+foreach ($edades as $nombre =&gt; $edad) {
+  echo "$nombre tiene $edad años &lt;br&gt;";
+}
+?&gt;
+    </pre>
+  </div>
+
+ 
+  <div class="sidebar">
+  <center><p>Dale click a lo que necesites</p></center>
+  
+  
+    <a href="https://www.youtube.com/watch?v=8BmvKpYhiQ0">
+      <img src="tuto1.jpg" alt="Tutorial" width="250" height="125"></a>
+      <center>Tutorial</center>
+ 
+      <a href="https://www.youtube.com/watch?v=nPCJAx5c1uE">
+     <img src="php0.jpg" alt="Tutorial" width="250" height="125">
+    <center>Tutorial</center>
+     
+  </div>
+<div class="my-button">
+
+    <a href="index.html">
+     <center> <img src="paginasweb.png" alt="Ejemplos" width="90" height="95"></center> </a>
+      Guia Programación Web
+      
+      </div>
+     
+<div class="my-button2">
+<center><a href="pseint.html">
+<img src="pseint.png" alt="" width="90" height="95"></a></center>
+Ir a página de PseInt
+</div>
+<div class="my-button3">
+<center><a href="paghtml.html">
+<img src="image.png" alt="" width="90" height="95"></a></center>
+Ir a página de HTML
+</div>
+
+  <footer>
+    <button1 type="button">
+      <a href="https://itspereira.edu.co/">
+      <img src="Escudo.png" alt="a" width="16" height="16"></a></button1>
+   Instituto Tecnico Superior de Pereira.
+    <p>Thomas Villa, Martin Castaño, Johana Morales 10-08 (P2) 2025</p>
+  </footer>
+</body>
+</html>

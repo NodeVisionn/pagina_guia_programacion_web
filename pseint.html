@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guía Programación Web - Guía para PSeInt</title>
+<link rel="icon" href="Escudo.png" type="image">
+</head>
+<header>
+Guía para PSeInt
+</header>
+<style>
+body {
+      background-color: #FFF9ED;
+      margin: 0;
+      font-family: Times New Roman;
+}
+header {
+	  margin-bottom:40px;
+      font-size: 30px;
+      padding: 50px;
+	  text-align:center;
+	  width:78%;
+      background-color: #1C6919;
+      color: white;
+}
+.title {
+	  font-size:30px;
+	  color:black;
+	  margin-left:50px
+}
+.subtitle {
+	  margin-left: 50px;
+      margin-top: 15px;
+	  text-align:left;
+      font-size: 24px;
+}
+.content {
+      margin-left: 50px;
+      margin-right: 320px;
+      margin-top: 15px;
+      text-align: left;
+      padding: 20px;
+      box-sizing: border-box;
+	  font-size: 20px;
+}
+.sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 100%;
+      background-color: #023300;
+      padding-top: 60px;
+      box-sizing: border-box;
+      overflow-y: auto;
+}
+.sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+}
+.sidebar a:hover {
+      background-color: #021F00;
+}
+footer {
+       background-color: #1C6919;
+       color: white;
+       text-align: center;
+       padding:10px;
+       width:78%;
+       bottom:0;
+}
+.button1 {
+      background-color: #1C6919;
+}
+.button2 {
+      background-color: #021F00
+}
+pre {
+      background-color: #f4f4f4;
+      border-left: 4px solid #1C6919;
+      padding: 10px;
+      text-align: left;
+      white-space: pre-wrap;
+}
+.my-button1 {
+      background-color: #7B7EE8;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 190px;
+}
+.my-button2 {
+      background-color: #4AAD4A;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+	  margin-left: 50px;
+}
+.my-button3 {
+      background-color: #F58D78;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+	  margin-left: 50px;
+}
+a {
+	  text-decoration:none;
+}
+</style>
+<body>
+  <div class="sidebar">
+  <center><font color="white" size="4">Si tiene dudas, puede ver los siguientes videos:</font></center>
+  <p>
+    <a href="https://www.youtube.com/playlist?list=PLAzlSdU-KYwXllXcUCW-BylQZemcDV798"><center>
+    <img src="tut1.jpg" alt="video1" width="250" height="125"></center></a>
+    <a href="https://www.youtube.com/playlist?list=PLZmtYtnx3IcUR9P1pZ7VOWlzvizYB6EF-"><center>
+    <img src="tut2.jpg" alt="video2" width="250" height="125"></center></a>
+    </p>
+  </div>
+  <h2 div class="subtitle">
+¿Qué es PSeInt?
+</h2>
+<div class="content">
+PseInt (Pseudocódigo Intérprete) es una herramienta de aprendizaje dirigida a la lógica de programación lanzada por primera vez el 29 de diciembre de 2003. Creada por Pablo Novara, su propósito principal es preparar y enseñarle a estudiantes los procesos de solución de algoritmos mendiante el pseudocódigo, y estructuras esenciales de los lenguajes de programación.
+</div>
+<h2 div class="subtitle">
+¿Por qué aprender PSeInt?
+</h2>
+<div class="content">
+PSeInt permite desarrollar habilidades de programación de una manera simple y rápida, ofreciéndo herramientas visuales y lógicas para ejercerlas. Permite adquirir la experiencia para en un futuro adentrarse en otros lenguajes de programación.
+</div>
+<h2 div class="subtitle">
+¿Cómo obtener PSeInt?
+</h2>
+<div class="content">
+<b>Paso 1: </b>Descargar el instalador. Se puede conseguir en la página oficial de PSeInt: pseint.sourceforge.net.
+<p>
+<b>Paso 2: </b>Ejecutar el instalador.
+</p>
+<p>
+<b>Paso 3: </b>Seleccionar la ubicación de los archivos a descargar.
+<p>
+<center><img src="instalador.JPG" alt="..."></center>
+</p>
+</p>
+</div>
+<div>
+<h2 class="title">
+Estructuras y comandos
+</h2>
+<div class="content">
+Cada algoritmo creado en PSeInt debe comenzar con <b>"Algoritmo"</b> y terminar con <b>"FinAlgoritmo"</b>. Estos hacen parte de los comandos esenciales de un algoritmo, que se pueden reconocer, junto a las otros comandos, por su color azul y fuente en negrilla.
+</div>
+<div class="content">
+    <h2 class="subtitle">Escribir</h2>
+    <pre>
+
+Algoritmo
+	Escribir "Hola Mundo!"
+FinAlgoritmo
+
+    </pre>
+    <h2 class="subtitle">Leer</h2>
+    <pre>
+
+Algoritmo
+	Escribir "Ingrese el valor de A."
+	Leer a
+	Escribir "Ingrese el valor de B."
+	Leer b
+	Escribir "Ingrese el valor de C."
+	Leer c
+	Escribir "A=",a," B=",b," C=",c;
+FinAlgoritmo
+
+    </pre>
+    <h2 class="subtitle">Asignar</h2>
+    <pre>
+
+Algoritmo
+	Definir cateto1,cateto2,hipotenuse Como Real
+	Escribir "Ingrese el valor del primer cateto."
+	Leer cateto1
+	Escribir "Ingrese el valor del segundo cateto."
+	Leer cateto2
+	hipotenuse=[(cateto1)^2+(cateto2)^2]/2
+	Escribir "La hipotenusa es igual a: ",hipotenuse;
+FinAlgoritmo
+
+    </pre>
+    <h2 class="subtitle">Si-Entonces</h2>
+    <pre>
+
+Algoritmo
+	Escribir "[-] Nota 1:"
+	Leer nota1
+	Escribir "[-] Nota 2:"
+	Leer nota2
+	Escribir "[-] Nota 3:"
+	Leer nota3
+	promedio=(nota1+nota2+nota3)/3
+	Si promedio>=4 Entonces
+		Escribir "[-] El estudiante aprobó, con un promedio de: ",promedio
+	SiNo
+		Escribir "[-] El estudiante reprobó, con un promedio de: ",promedio
+	FinSi
+FinAlgoritmo
+
+    </pre>
+    <h2 class="subtitle">Según</h2>
+    <pre>
+
+Algoritmo
+	Escribir ' Horario escolar'
+	Escribir 'Ingrese un número. (1 - 7)'
+	Leer num
+	Según num Hacer
+		1:
+			Escribir ' Lunes:'
+			Escribir 'Filosofía (1 hora)'
+			Escribir 'Administración (2 horas)'
+			Escribir 'Matemáticas (2 horas)'
+			Escribir 'Ética (1 hora)'
+		2:
+			Escribir ' Martes:'
+			Escribir 'Inglés (2 horas)'
+			Escribir 'Química (2 horas)'
+			Escribir 'Física (2 horas)'
+		3:
+			Escribir ' Miércoles:'
+			Escribir 'Edu. Física (1 hora)'
+			Escribir 'Ciencias Sociales (2 horas)'
+			Escribir 'Castellano (1 hora)'
+			Escribir 'Religión (1 hora)'
+			Escribir 'Artes (1 horas)'
+		4:
+			Escribir ' Jueves:'
+			Escribir 'Publicidad & Mercadeo (2 horas)'
+			Escribir 'Programación (4 horas)'
+		5:
+			Escribir ' Viernes:'
+			Escribir 'Graficación (3 horas)'
+			Escribir 'Editores (3 horas)'
+		De Otro Modo:
+			Escribir 'Número no válido.'
+	FinSegún
+FinAlgoritmo
+
+    </pre>
+    <h2 class="subtitle">Mientras</h2>
+    <pre>
+
+Algoritmo
+	Definir i Como Entero
+	i=1
+	Mientras i<=10 Hacer
+		Escribir i
+		i<-i+1
+	FinMientras
+FinAlgoritmo
+
+
+    </pre>
+    <h2 class="subtitle">Repetir</h2>
+    <pre>
+
+Algoritmo
+	Definir contador, veces como  entero 
+	contador <- -10;
+	Escribir  "escribe el numero de veces que quieres que se repita" 
+	leer veces
+	Repetir
+		Escribir "Contador: ", contador;
+		contador<- contador + 1; 
+	Hasta Que  contador > veces
+FinAlgoritmo
+
+    </pre>
+    <h2 class="subtitle">Para</h2>
+    <pre>
+
+Algoritmo sin_titulo
+	Escribir "ingrese la cantidad:"; Leer n ;
+	Dimension a[n];
+	Para i<- 1 Hasta 10 Hacer
+		Escribir "ingrese el dato", i; 
+		Leer a[i];
+	FinPara
+FinAlgoritmo
+
+    </pre>
+    <h2 class="subtitle">Función</h2>
+    <pre>
+
+Funcion area <- CalcularAreaTriangulo(base, altura)
+    area <- (base * altura) / 2
+FinFuncion
+
+Algoritmo principal
+    area <- CalcularAreaTriangulo(5, 8)
+    Escribir "El área del triángulo es: ", area
+FinAlgoritmo
+
+    </pre>
+</h2>
+</div>
+<h2 class="title">
+Diagramas de flujo
+</h2>
+<div class="content">
+Son estucturas que permiten visualizar los algoritmos de manera gráfica, a través de un mapa conceptual con disintas formas y colores. Para acceder a esta función, se debe dar clic al botón <b>"Dibujar Diagrama de Flujo..."</b>, en la barra de herramientas superior.
+<p>
+<center><img src="diagrama de flujo.JPG" alt="..."></center>
+</p>
+</div>
+<p>
+<div class="my-button1">
+<center><a href="pagphp.html">
+<img src="PHP.png" alt="" width="174" height=""></a></center>
+Ir a Guía para PHP
+</div>
+<div class="my-button3">
+<center><a href="paghtml.html">
+<img src="html.png" alt="" width="90" height="95"></a></center>
+Ir a Guía para HTML
+</div>
+<div class="my-button2">
+<center><a href="index.html">
+<img src="paginasweb.png" alt="" width="90" height="95"></a></center>
+Volver a página madre
+</div>
+</p>
+<footer>
+   <button1 type="button">
+      <a href="https://itspereira.edu.co/">
+      <img src="Escudo.png" alt="" width="16" height="16"></a></button1>
+   Instituto Tecnico Superior de Pereira.
+<p>Thomas Villa, Martin Castaño, Johana Morales 10-08 (P2) 2025</p>
+</footer>
+</body>
+</html>

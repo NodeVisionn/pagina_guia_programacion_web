@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Guia Progrmación Web - Guía HTML</title>
+  <link rel="icon" href="Escudo.png" type="image">
+  <style>
+    body {
+      background-color: #FFF9ED;
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+    }
+
+    header {
+      font-size: 30px;
+      text-align: center;
+      padding: 50px;
+      width: 73%;
+      background-color: #1C6919;
+      color: white;
+    }
+
+    .subtitle {
+      text-align: left;
+      margin-top: 30px;
+      font-size: 24px;
+      color: #023300;
+    }
+
+    .content {
+      margin-left: 50px;
+      margin-right: 320px;
+      margin-top: 30px;
+      padding: 20px;
+      box-sizing: border-box;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 100%;
+      background-color: #023300;
+      padding-top: 60px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      font-size: 20px;
+      color: white;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #021F00;
+    }
+
+    footer {
+      background-color: #1C6919;
+      color: white;
+      text-align: center;
+      width: 77.6%;
+      padding: 10px;
+      margin-top: 50px;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      border-left: 4px solid #1C6919;
+      padding: 10px;
+      text-align: left;
+      white-space: pre-wrap;
+      font-size: 16px;
+    }
+
+    .my-button, .my-button2, .my-button3 {
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .my-button { background-color: #7B7EE8; margin-left: 190px; }
+    .my-button2 { background-color: #4AAD4A; margin-left: 50px; }
+    .my-button3 { background-color: #F3E59E; margin-left: 50px; }
+
+    shape {
+      font-size: 23px;
+      text-align: center;
+      padding: 25px;
+      background-color: #1C6919;
+      color: white;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    Guía Para HTML
+  </header>
+
+  <div class="content">
+    <h2 class="subtitle">Introducción a HTML</h2>
+    <p>HTML (HyperText Markup Language) es el lenguaje fundamental de la web. Sirve para estructurar el contenido de las páginas, permitiendo definir textos, imágenes, enlaces, tablas y más.</p>
+
+    <h2 class="subtitle">¿Por qué aprender HTML?</h2>
+    <p>Es el punto de partida para todo desarrollador web. Aprender HTML te permite entender cómo se construyen los sitios y cómo se combinan con CSS y JavaScript para lograr diseños dinámicos e interactivos.</p>
+
+    <h2 class="subtitle">Estructura básica de un documento HTML</h2>
+    <p>Todo archivo HTML comienza con una estructura base que indica al navegador cómo debe interpretarlo:</p>
+    <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Mi primera página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;¡Hola, mundo!&lt;/h1&gt;
+  &lt;p&gt;Este es mi primer sitio web.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2 class="subtitle">Encabezados y párrafos</h2>
+    <p>HTML tiene seis niveles de encabezado (<code>&lt;h1&gt;</code> hasta <code>&lt;h6&gt;</code>). Los párrafos se crean con la etiqueta <code>&lt;p&gt;</code>.</p>
+    <pre>
+&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;p&gt;Este es un párrafo con información sobre mi página.&lt;/p&gt;
+    </pre>
+
+    <h2 class="subtitle">Listas</h2>
+    <p>Las listas se pueden crear de dos tipos: ordenadas (<code>&lt;ol&gt;</code>) y no ordenadas (<code>&lt;ul&gt;</code>):</p>
+    <pre>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abrir Visual Studio Code&lt;/li&gt;
+
+  &lt;li&gt;Crear un archivo .html&lt;/li&gt;
+  &lt;li&gt;Escribir tu código&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+
+    <h2 class="subtitle">Imágenes y enlaces</h2>
+    <p>Las imágenes se insertan con la etiqueta <code>&lt;img&gt;</code>, y los enlaces con <code>&lt;a&gt;</code>:</p>
+    <pre>
+&lt;img src="foto.jpg" alt="Descripción de la imagen" width="300"&gt;
+&lt;a href="https://www.google.com"&gt;Visita Google&lt;/a&gt;
+    </pre>
+
+    <h2 class="subtitle">Tablas básicas</h2>
+    <p>HTML también permite crear tablas simples para organizar información:</p>
+    <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nombre&lt;/th&gt;
+    &lt;th&gt;Edad&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Thomas&lt;/td&gt;
+    &lt;td&gt;17&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+
+    <h2 class="subtitle">Conclusión</h2>
+    <p>HTML es la base de toda página web. Aprenderlo te permitirá crear la estructura de tus propios proyectos y, con el tiempo, podrás combinarlo con CSS para darle estilo y con JavaScript para hacerlo interactivo.</p>
+  </div>
+
+  <div class="sidebar">
+    <center><p>Recursos recomendados</p></center>
+    <a href="https://www.youtube.com/watch?v=UB1O30fR-EE">
+      <img src="tutoht.jpg" alt="Tutorial HTML" width="250" height="125"></a>
+    <center>Tutorial básico</center>
+
+    <a href="https://www.youtube.com/watch?v=KJ13lX20FqU">
+      <img src="tutoht2.jpg" alt="Tutorial HTML Avanzado" width="250" height="125"></a>
+    <center>Tutorial avanzado</center>
+  </div>
+
+  <div class="my-button">
+    <center><a href="pagphp.html">
+      <img src="php.png" alt="PHP" width="90" height="95"></a></center>
+    Ir a página PHP
+  </div>
+
+  <div class="my-button2">
+    <center><a href="index.html">
+      <img src="paginasweb.png" alt="HTML" width="90" height="95"></a></center>
+    Ir a Guia Programación Web
+  </div>
+
+  <div class="my-button3">
+    <center><a href="pseint.html">
+      <img src="pseint.png" alt="PSeInt" width="90" height="95"></a></center>
+    Ir a Página PseInt
+  </div>
+
+  <footer>
+    <a href="https://itspereira.edu.co/">
+      <img src="Escudo.png" alt="Escudo" width="16" height="16"></a>
+    Instituto Técnico Superior de Pereira
+    <p>Thomas Villa, Martin Castaño, Johana Morales 10-08 (P2) 2025</p>
+  </footer>
+</body>
+</html>
